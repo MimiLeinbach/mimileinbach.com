@@ -24,8 +24,9 @@ const AIProjectModal = ({ project, onClose }) => {
                       width="100%"
                       height="152"
                       frameBorder="0"
-                      allowtransparency="true"
-                      allow="encrypted-media"
+                      allowFullScreen=""
+                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                      title={`Spotify player - ${episode.title}`}
                     ></iframe>
                   </div>
                 </div>

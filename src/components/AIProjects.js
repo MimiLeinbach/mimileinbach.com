@@ -9,7 +9,7 @@ const AIProjects = () => {
     {
       id: 1,
       title: "AI-Assisted Portfolio Development",
-      image: "/AI Projects/Thumbnails/portfolio-homepage.jpg",  
+      image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/portfolio-homepage.jpg",  
       content: {
         overview: {
           title: "Project Overview",
@@ -53,7 +53,7 @@ const AIProjects = () => {
     {
       id: 2,
       title: "Life in 19th Century Hawaii Podcast",
-      image: "/AI Projects/Thumbnails/HawaiiPodcast.jpg",
+      image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/HawaiiPodcast.jpg",
       content: {
         description: {
           text: "I produced this podcast using Notebook LM. It's based on <em>The Memoirs of Elizabeth Kinau Wilder</em> by Elizabeth Leslie Wight, published in 1909. As the daughter of a missionary doctor and close advisor to King Kamehameha III, Elizabeth observes the tumultous transition from old time Hawaii in 1831 to the tragic loss of the kingdom in 1893 from an intimate vantage point. It's a fascinating and engaging story."
