@@ -1,0 +1,106 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Main title */
+.modal-content > h2 {
+  font-size: 20pt;
+  margin-bottom: 2rem;
+  color: #282c34;
+  font-weight: bold;
+}
+
+/* Section headers (Situation, Tasks, etc.) */
+.case-study-content h2 {
+  font-size: 16pt;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #282c34;
+  font-weight: bold;
+}
+
+/* Subsection headers */
+.case-study-content h3 {
+  font-size: 14pt;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #282c34;
+  font-weight: normal;
+}
+
+/* Regular text */
+.case-study-content p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Bullet points */
+.case-study-content ul {
+  margin: 0 0 1rem 1.5rem;
+  padding: 0;
+}
+
+.case-study-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.close-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.close-button:hover {
+  color: #282c34;
+}
+
+/* Scrollbar styling */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.case-study-content {
+  text-align: left;
+} 

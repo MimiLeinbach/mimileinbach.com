@@ -1,0 +1,68 @@
+.case-studies {
+  padding: 2rem 4rem;
+}
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.case-study-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.case-study-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.case-study-item img:hover {
+  transform: scale(1.02);
+}
+
+.case-study-item h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  color: #282c34;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.contain-image {
+  object-fit: contain !important;
+  background-color: white;
+}
+
+.crop-top {
+  object-position: center top !important;
+}
+
+.crop-top-faces {
+  object-position: center 20% !important;
+}
+
+.crop-bottom {
+  object-fit: cover !important;
+  object-position: center 50% !important;
+  border-top: 8px solid white !important;
+}
+
+.crop-design-thinking {
+  object-fit: cover !important;
+  object-position: center 90% !important;
+}
+
+.crop-ux-modern {
+  object-fit: cover !important;
+  object-position: center 65% !important;
+} 
