@@ -1,4 +1,4 @@
-# Mimi Leinbach Website
+# Portfolio Website
 
 This portfolio site was developed through collaborative coding in Cursor with Claude 3 Sonnet, an Anthropic LLM. The project demonstrates how AI can be effectively used as a programming partner while maintaining full developer control over architecture and design decisions.
 
