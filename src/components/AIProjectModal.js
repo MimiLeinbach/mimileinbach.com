@@ -7,11 +7,54 @@ const AIProjectModal = ({ project, onClose }) => {
         </button>
         <div className="project-content">
           <h2>{project.title}</h2>
-          <div className="project-section">
-            {project.content.description && (
+          
+          {/* Portfolio Project Content */}
+          {project.content.overview && (
+            <>
+              <div className="project-section">
+                <h3>{project.content.overview.title}</h3>
+                <p>{project.content.overview.text}</p>
+              </div>
+              
+              <div className="project-section">
+                <h3>{project.content.technical.title}</h3>
+                <p>{project.content.technical.text}</p>
+                <ul>
+                  {project.content.technical.list.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="project-section">
+                <h3>{project.content.process.title}</h3>
+                <p>{project.content.process.text}</p>
+                <ul>
+                  {project.content.process.list.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="project-section">
+                <h3>{project.content.learnings.title}</h3>
+                <p>{project.content.learnings.text}</p>
+                <ul>
+                  {project.content.learnings.list.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </>
+          )}
+
+          {/* Podcast Content */}
+          {project.content.description && (
+            <div className="project-section">
               <p dangerouslySetInnerHTML={{ __html: project.content.description.text }}></p>
-            )}
-          </div>
+            </div>
+          )}
+          
           {project.content.episodes && (
             <div className="episodes-section">
               {project.content.episodes.map((episode, index) => (
