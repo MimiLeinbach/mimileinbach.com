@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/mimileinbach.com/static/css/main.70ace59b.css",
-    "main.js": "/mimileinbach.com/static/js/main.a8a303f6.js",
-    "static/js/453.080c4443.chunk.js": "/mimileinbach.com/static/js/453.080c4443.chunk.js",
-    "static/media/Executing Visions.jpeg": "/mimileinbach.com/static/media/Executing Visions.af29c35b710adbbded2d.jpeg",
-    "static/media/UX Modernization.jpeg": "/mimileinbach.com/static/media/UX Modernization.95b0a1c3cd9dd2091832.jpeg",
-    "static/media/Go-to-Market Journey.jpeg": "/mimileinbach.com/static/media/Go-to-Market Journey.6f9475e8225c975cf01b.jpeg",
-    "static/media/Customer Adoption Transformation.jpeg": "/mimileinbach.com/static/media/Customer Adoption Transformation.9d0ffc6300a2fa8015aa.jpeg",
-    "static/media/UX Component Library Development.jpeg": "/mimileinbach.com/static/media/UX Component Library Development.eca74849f61cc21af8a6.jpeg",
-    "static/media/Design Thinking Transformation.jpeg": "/mimileinbach.com/static/media/Design Thinking Transformation.0a3708b4b0c37a6063b3.jpeg",
-    "static/media/Jira Transformation.jpeg": "/mimileinbach.com/static/media/Jira Transformation.bebbbd7c013f0c326872.jpeg",
-    "static/media/Finding Product-Market Fit.jpeg": "/mimileinbach.com/static/media/Finding Product-Market Fit.6731fd6972c9f81610f7.jpeg",
-    "index.html": "/mimileinbach.com/index.html",
-    "main.70ace59b.css.map": "/mimileinbach.com/static/css/main.70ace59b.css.map",
-    "main.a8a303f6.js.map": "/mimileinbach.com/static/js/main.a8a303f6.js.map",
-    "453.080c4443.chunk.js.map": "/mimileinbach.com/static/js/453.080c4443.chunk.js.map"
+    "main.css": "/static/css/main.70ace59b.css",
+    "main.js": "/static/js/main.d41a36fc.js",
+    "static/js/453.080c4443.chunk.js": "/static/js/453.080c4443.chunk.js",
+    "static/media/Executing Visions.jpeg": "/static/media/Executing Visions.af29c35b710adbbded2d.jpeg",
+    "static/media/UX Modernization.jpeg": "/static/media/UX Modernization.95b0a1c3cd9dd2091832.jpeg",
+    "static/media/Go-to-Market Journey.jpeg": "/static/media/Go-to-Market Journey.6f9475e8225c975cf01b.jpeg",
+    "static/media/Customer Adoption Transformation.jpeg": "/static/media/Customer Adoption Transformation.9d0ffc6300a2fa8015aa.jpeg",
+    "static/media/UX Component Library Development.jpeg": "/static/media/UX Component Library Development.eca74849f61cc21af8a6.jpeg",
+    "static/media/Design Thinking Transformation.jpeg": "/static/media/Design Thinking Transformation.0a3708b4b0c37a6063b3.jpeg",
+    "static/media/Jira Transformation.jpeg": "/static/media/Jira Transformation.bebbbd7c013f0c326872.jpeg",
+    "static/media/Finding Product-Market Fit.jpeg": "/static/media/Finding Product-Market Fit.6731fd6972c9f81610f7.jpeg",
+    "index.html": "/index.html",
+    "main.70ace59b.css.map": "/static/css/main.70ace59b.css.map",
+    "main.d41a36fc.js.map": "/static/js/main.d41a36fc.js.map",
+    "453.080c4443.chunk.js.map": "/static/js/453.080c4443.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.70ace59b.css",
-    "static/js/main.a8a303f6.js"
+    "static/js/main.d41a36fc.js"
   ]
 }
