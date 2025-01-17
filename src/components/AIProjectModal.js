@@ -7,19 +7,31 @@ const AIProjectModal = ({ project, onClose }) => {
         </button>
         <div className="project-content">
           <h2>{project.title}</h2>
-          {Object.entries(project.content).map(([key, section]) => (
-            <div key={key} className="project-section">
-              <h3>{section.title}</h3>
-              <p>{section.text}</p>
-              {section.list && (
-                <ul>
-                  {section.list.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              )}
+          <div className="project-section">
+            {project.content.description && (
+              <p dangerouslySetInnerHTML={{ __html: project.content.description.text }}></p>
+            )}
+          </div>
+          {project.content.episodes && (
+            <div className="episodes-section">
+              {project.content.episodes.map((episode, index) => (
+                <div key={index} className="episode">
+                  <h3>{episode.title}</h3>
+                  <p dangerouslySetInnerHTML={{ __html: episode.description }}></p>
+                  <div className="spotify-embed">
+                    <iframe
+                      src={`https://open.spotify.com/embed/episode/${episode.spotifyId}`}
+                      width="100%"
+                      height="152"
+                      frameBorder="0"
+                      allowtransparency="true"
+                      allow="encrypted-media"
+                    ></iframe>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>
