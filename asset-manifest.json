@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e08db4d7.css",
+    "main.js": "/static/js/main.a80d8d57.js",
+    "static/js/453.080c4443.chunk.js": "/static/js/453.080c4443.chunk.js",
+    "static/media/Executing Visions.jpeg": "/static/media/Executing Visions.af29c35b710adbbded2d.jpeg",
+    "static/media/UX Modernization.jpeg": "/static/media/UX Modernization.95b0a1c3cd9dd2091832.jpeg",
+    "static/media/Go-to-Market Journey.jpeg": "/static/media/Go-to-Market Journey.6f9475e8225c975cf01b.jpeg",
+    "static/media/Customer Adoption Transformation.jpeg": "/static/media/Customer Adoption Transformation.9d0ffc6300a2fa8015aa.jpeg",
+    "static/media/UX Component Library Development.jpeg": "/static/media/UX Component Library Development.eca74849f61cc21af8a6.jpeg",
+    "static/media/Design Thinking Transformation.jpeg": "/static/media/Design Thinking Transformation.0a3708b4b0c37a6063b3.jpeg",
+    "static/media/Jira Transformation.jpeg": "/static/media/Jira Transformation.bebbbd7c013f0c326872.jpeg",
+    "static/media/Finding Product-Market Fit.jpeg": "/static/media/Finding Product-Market Fit.6731fd6972c9f81610f7.jpeg",
+    "index.html": "/index.html",
+    "main.e08db4d7.css.map": "/static/css/main.e08db4d7.css.map",
+    "main.a80d8d57.js.map": "/static/js/main.a80d8d57.js.map",
+    "453.080c4443.chunk.js.map": "/static/js/453.080c4443.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e08db4d7.css",
+    "static/js/main.a80d8d57.js"
+  ]
+}
