@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.dba60116.css",
-    "main.js": "/static/js/main.d41a36fc.js",
+    "main.css": "/static/css/main.730e34b9.css",
+    "main.js": "/static/js/main.a5bca56b.js",
     "static/js/453.080c4443.chunk.js": "/static/js/453.080c4443.chunk.js",
     "static/media/Executing Visions.jpeg": "/static/media/Executing Visions.af29c35b710adbbded2d.jpeg",
     "static/media/UX Modernization.jpeg": "/static/media/UX Modernization.95b0a1c3cd9dd2091832.jpeg",
@@ -12,12 +12,12 @@
     "static/media/Jira Transformation.jpeg": "/static/media/Jira Transformation.bebbbd7c013f0c326872.jpeg",
     "static/media/Finding Product-Market Fit.jpeg": "/static/media/Finding Product-Market Fit.6731fd6972c9f81610f7.jpeg",
     "index.html": "/index.html",
-    "main.dba60116.css.map": "/static/css/main.dba60116.css.map",
-    "main.d41a36fc.js.map": "/static/js/main.d41a36fc.js.map",
+    "main.730e34b9.css.map": "/static/css/main.730e34b9.css.map",
+    "main.a5bca56b.js.map": "/static/js/main.a5bca56b.js.map",
     "453.080c4443.chunk.js.map": "/static/js/453.080c4443.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dba60116.css",
-    "static/js/main.d41a36fc.js"
+    "static/css/main.730e34b9.css",
+    "static/js/main.a5bca56b.js"
   ]
 }
