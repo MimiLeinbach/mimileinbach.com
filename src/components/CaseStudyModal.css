@@ -13,65 +13,81 @@
 
 .modal-content {
   background-color: white;
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 10px;
-  max-width: 900px;
-  width: 95%;
+  width: 90%;
+  max-width: 800px;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
+}
+
+.case-study-content {
+  margin-top: 1rem;
   font-family: 'Lato', sans-serif;
-  line-height: 1.5;
+  font-size: 11pt;
+  line-height: 1.6;
+  color: #444;
   text-align: left;
 }
 
-/* Main title */
-.modal-content > h2 {
+/* Title styling */
+.case-study-content h1 {
   font-size: 20pt;
-  margin-bottom: 2rem;
-  color: #282c34;
   font-weight: bold;
+  color: #282c34;
+  margin-bottom: 2rem;
 }
 
-/* Section headers (Situation, Tasks, etc.) */
+/* Main section headers */
 .case-study-content h2 {
   font-size: 16pt;
+  font-weight: bold;
+  color: #282c34;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: #282c34;
-  font-weight: bold;
 }
 
-/* Subsection headers */
+/* Subheaders */
 .case-study-content h3 {
   font-size: 14pt;
+  font-weight: normal;
+  color: #282c34;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  color: #282c34;
-  font-weight: normal;
 }
 
 /* Regular text */
 .case-study-content p {
+  font-size: 11pt;
+  line-height: 1.6;
   margin-bottom: 1rem;
-  line-height: 1.5;
 }
 
-/* Bullet points */
 .case-study-content ul {
-  margin: 0 0 1rem 1.5rem;
-  padding: 0;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;
 }
 
 .case-study-content li {
+  font-size: 11pt;
+  line-height: 1.6;
   margin-bottom: 0.5rem;
-  line-height: 1.5;
+  display: list-item;
+}
+
+/* Add these styles to ensure first items aren't being affected differently */
+.case-study-content ul li:first-child {
+  list-style-type: disc !important;  /* Force bullet on first item */
+  display: list-item !important;     /* Ensure it's displayed as a list item */
+  margin-left: 0;                    /* Reset any margin that might hide the bullet */
 }
 
 .close-button {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1rem;
+  right: 1rem;
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -99,8 +115,4 @@
 
 .modal-content::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-.case-study-content {
-  text-align: left;
 } 

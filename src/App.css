@@ -79,7 +79,13 @@
   width: 73%;
   padding: 2rem;
   text-align: left;
-  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.bio-content {
+  width: 100%;
 }
 
 .bio-section h2 {
@@ -102,6 +108,7 @@
   width: 100%;
   padding: 0;
   gap: 2rem;
+  align-items: center;
 }
 
 .profile-image {
@@ -156,9 +163,10 @@
 }
 
 .social-links {
+  margin-top: 1rem;
   display: flex;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 1rem;
+  justify-content: flex-start;
 }
 
 .icon-button {
@@ -188,15 +196,22 @@
   z-index: 1000;
 }
 
-.modal-content {
+.modal-content.resume-modal {
   background-color: white;
   padding: 2rem;
   border-radius: 10px;
-  max-width: 800px;
   width: 90%;
+  max-width: 1000px;
   max-height: 90vh;
-  overflow-y: auto;
   position: relative;
+  overflow-y: auto;
+}
+
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .close-button {
@@ -208,14 +223,11 @@
   font-size: 1.5rem;
   cursor: pointer;
   color: #666;
+  z-index: 1001;
 }
 
 .close-button:hover {
   color: #282c34;
-}
-
-.resume-content {
-  margin-top: 1rem;
 }
 
 .tab-button {
@@ -263,4 +275,58 @@
   .bio-section {
     padding-right: 0;
   }
+}
+
+.right-section {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.text-content {
+  max-width: 600px;
+}
+
+.icon-link {
+  color: #333;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #666;
+}
+
+/* Add styles for react-pdf */
+.react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.react-pdf__Page {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+}
+
+.page-controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.page-controls button {
+  padding: 0.5rem 1rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

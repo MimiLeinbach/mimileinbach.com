@@ -65,4 +65,15 @@
 .crop-ux-modern {
   object-fit: cover !important;
   object-position: center 65% !important;
+}
+
+.case-study-content ul li:first-of-type {
+  list-style-type: none;
+  margin-left: -1.25em;
+}
+
+.case-study-content .situation ul li:first-of-type,
+.case-study-content .tasks ul li:first-of-type {
+  list-style-type: none;
+  margin-left: -1.25em;
 } 
