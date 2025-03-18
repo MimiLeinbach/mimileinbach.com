@@ -1,17 +1,17 @@
 import React from 'react';
-import './ResumeModal.css';
+import '../App.css';
 
-function ResumeModal({ onClose }) {
+const ResumeModal = ({ onClose }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={e => e.stopPropagation()}>
+      <div className="modal-content resume-modal" onClick={e => e.stopPropagation()}>
         <button className="close-button" onClick={onClose}>
           <i className="fas fa-times"></i>
         </button>
         <div className="resume-content">
           <iframe
-            src={process.env.PUBLIC_URL + '/Mimi_Leinbach_Resume.pdf'}
-            title="Resume"
+            src={`${process.env.PUBLIC_URL}/Mimi Leinbach Resume.pdf`}
+            title="Mimi Leinbach Resume"
             width="100%"
             height="800px"
             style={{ border: 'none' }}
@@ -20,6 +20,6 @@ function ResumeModal({ onClose }) {
       </div>
     </div>
   );
-}
+};
 
 export default ResumeModal; 

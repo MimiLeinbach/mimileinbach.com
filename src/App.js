@@ -1,12 +1,65 @@
+import React, { useState } from 'react';
 import './App.css';
-import { useState } from 'react';
 import CaseStudies from './components/CaseStudies';
 import AIProjects from './components/AIProjects';
-import ResumeModal from './components/ResumeModal';
+import Contact from './components/Contact';
+import AIProjectModal from './components/AIProjectModal';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
-  const [showResume, setShowResume] = useState(false);
+  const [showAIPortfolioModal, setShowAIPortfolioModal] = useState(false);
+  
+  const aiPortfolioProject = {
+    id: 1,
+    title: "AI-Assisted Portfolio Development",
+    content: {
+      overview: {
+        title: "Project Overview",
+        text: "I built this website with Cursor, utilizing collaborative coding with Claude 3.5 Sonnet, an Anthropic LLM. The project demonstrates how AI can be effectively used as a programming partner while maintaining full developer control over architecture and design decisions."
+      },
+      technical: {
+        title: "Technical Implementation",
+        text: "Built with React and modern CSS, the site features responsive design, component-based architecture, and clean, maintainable code. Key features include:",
+        list: [
+          "Dynamic content rendering with React components",
+          "Markdown-based case study system",
+          "Modal windows for detailed content",
+          "Responsive video embedding",
+          "CSS Grid and Flexbox layouts"
+        ]
+      },
+      process: {
+        title: "AI Collaboration Process",
+        text: "Claude served as a programming partner throughout development, helping with:",
+        list: [
+          "Code implementation and debugging",
+          "CSS styling and layout solutions",
+          "Component structure recommendations",
+          "Best practice suggestions",
+          "Real-time code reviews and improvements"
+        ]
+      },
+      learnings: {
+        title: "Key Learnings",
+        text: "This project demonstrated how AI can enhance the development process while maintaining high code quality:",
+        list: [
+          "AI excels at suggesting implementation details while humans drive overall architecture",
+          "Iterative AI collaboration enables rapid prototyping and refinement",
+          "Clear communication with AI leads to better code solutions",
+          "AI can help maintain consistency across a codebase",
+          "Human oversight remains crucial for final design and implementation decisions"
+        ]
+      }
+    }
+  };
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+  };
+
+  const toggleAIPortfolioModal = () => {
+    setShowAIPortfolioModal(!showAIPortfolioModal);
+  };
 
   const renderContent = () => {
     switch(activeTab) {
@@ -14,43 +67,30 @@ function App() {
         return <CaseStudies />;
       case 'ai-projects':
         return <AIProjects />;
+      case 'contact':
+        return <Contact />;
       case 'home':
       default:
         return (
-          <div className="content-container">
-            <div className="video-container">
-              <div className="video-wrapper">
-                <iframe 
-                  src="https://player.vimeo.com/video/1048222712?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                  title="Meet Mimi"
-                  style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-                ></iframe>
-              </div>
-            </div>
-            <div className="bio-section">
-              <div className="bio-content">
-                <h2>Strategic Product Leader</h2>
-                <p>
-                  I'm a product person. I love taking on big, ambitious challenges (like founding a company in an unknown market!) and connecting the dots to find and solve problems with solutions that delight customers with exceptional functionality and quality. I've built award-winning and record-breaking products in markets ranging from educational games and hardware to apparel to Enterprise SaaS. Recently I've been building AI expertise and can't wait to help realize its potential to transform work and lives.
-                </p>
-                <div className="social-links">
-                  <button 
-                    className="icon-button" 
-                    onClick={() => setShowResume(true)}
-                  >
-                    <i className="far fa-file-alt"></i>
-                  </button>
-                  <a 
-                    href="https://linkedin.com/in/mimileinbach/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="icon-button"
-                  >
-                    <i className="fab fa-linkedin"></i>
-                  </a>
+          <div className="home-content-wrapper">
+            <div className="home-content">
+              <div className="right-content">
+                <div className="video-container">
+                  <iframe 
+                    src="https://player.vimeo.com/video/1066360982"
+                    width="640" 
+                    height="360" 
+                    frameBorder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    allowFullScreen
+                    title="Mimi Portfolio Video"
+                  ></iframe>
                 </div>
+              </div>
+              <div className="left-content">
+                <h2>Entrepreneurial Product Leader</h2>
+                <p>I transform complex technical challenges into intuitive solutions that drive measurable business growth and delight millions of users. I bring a unique perspective that balances innovation with practical execution. I connect the dots between emerging technologies, business objectives, and human needs to create products that make a meaningful impact.</p>
+                <p>I built this site with Cursor using Claude as a coding assistant. <span className="learn-more" onClick={toggleAIPortfolioModal}>Learn More</span></p>
               </div>
             </div>
           </div>
@@ -68,37 +108,48 @@ function App() {
               <li>
                 <button 
                   className={`tab-button ${activeTab === 'home' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('home')}
+                  onClick={() => handleTabChange('home')}
                 >
                   Home
                 </button>
               </li>
               <li>
                 <button 
+                  className={`tab-button ${activeTab === 'ai-projects' ? 'active' : ''}`}
+                  onClick={() => handleTabChange('ai-projects')}
+                >
+                  AI Projects
+                </button>
+              </li>
+              <li>
+                <button 
                   className={`tab-button ${activeTab === 'case-studies' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('case-studies')}
+                  onClick={() => handleTabChange('case-studies')}
                 >
                   Case Studies
                 </button>
               </li>
               <li>
                 <button 
-                  className={`tab-button ${activeTab === 'ai-projects' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('ai-projects')}
+                  className={`tab-button ${activeTab === 'contact' ? 'active' : ''}`}
+                  onClick={() => handleTabChange('contact')}
                 >
-                  AI Projects
+                  Contact
                 </button>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-      {renderContent()}
-
-      {showResume && (
-        <ResumeModal 
-          key={Date.now()}
-          onClose={() => setShowResume(false)} 
+      
+      <main>
+        {renderContent()}
+      </main>
+      
+      {showAIPortfolioModal && (
+        <AIProjectModal 
+          project={aiPortfolioProject}
+          onClose={toggleAIPortfolioModal}
         />
       )}
     </div>

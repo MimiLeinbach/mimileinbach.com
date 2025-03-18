@@ -248,7 +248,7 @@ SAP SuccessFactors, a comprehensive Human Capital Management (HCM) suite, faced 
 - Legacy system integration issues
 - Accessibility compliance gaps
 - Disjointed user experience
-- Customer dissatisfaction with interface
+- Customer dissatisfaction with user experience
 
 ## Tasks
 
@@ -353,7 +353,7 @@ This case study illustrates that successful UX transformation requires a balance
     className: "crop-top",
     content: `## Situation
 
-As a first-time founder, launching the Scout Organics clothing line presented numerous challenges in entering the premium organic baby and children's apparel market. With no prior industry experience and limited resources, the brand needed to establish itself in a competitive space while building credibility and distribution channels from scratch. As founder, I directed all aspects of the business from funding, market research, design, overseas manufacturing, branding, communications, and distribution. This included developing partnerships with manufacturers and agents, independent sales representatives, and distributors, and retailers.
+As a first-time founder, launching the Scout Organics clothing line presented numerous challenges in entering the premium organic baby and children's apparel market. With no prior industry experience and limited resources, the brand needed to establish itself in a competitive space while building credibility and distribution channels from scratch. As founder, I directed all aspects of the business from funding, market research, design, overseas manufacturing, branding, communications, and distribution. This included developing partnerships with manufacturers and agents, independent sales representatives, distributors, and retailers.
 
 ### Key challenges included:
 - No prior apparel industry experience
@@ -596,16 +596,18 @@ This case study illustrates that successful product development requires careful
 After many years as an HCM market leader, the SAP SuccessFactors product suite was in need of a modern, accessible, and more cohesive user experience. The comprehensive product suite including recruiting, onboarding, performance management, learning, payroll, time, and compensation had been assembled through acquisitions with tech debt building over time. Users encountered varying experiences across modules, impacting usability and adoption rates. The organization recognized the need for a fundamental transformation to align the user experience with consumer-grade standards that modern users expected. As a Senior UX Program Manager, I established a UX Program Management function for the first time at SuccessFactors. This was needed to drive the Design Thinking Transformation so the product organization could execute the strategy of reimagining user experience across the entire product suite. I developed and led all operational functions including establishing processes, tools, guidelines, documentation, training, support, and KPIs.
 
 ### Key challenges included:
+- Incremental feature development driven by one-off customer requests
+- Siloed approach to roadmap planning
 - Fragmented user interfaces across different modules
 - Inconsistent design patterns throughout the suite
 - Legacy complexities from acquisitions and prior development
-- Siloed approach to product development
-- Gap between user expectations and current experience
+- Gap between modernuser expectations and current experience
 
 ## Tasks
 
 The organization needed to:
 - Implement a comprehensive design thinking framework across the UX organization
+- Institute standardizedroadmap planning and stakeholder alignment processes
 - Create a unified, modern user experience across all product modules
 - Establish direct channels for customer feedback and engagement
 - Develop new processes for cross-functional collaboration

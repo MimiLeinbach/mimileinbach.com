@@ -1,0 +1,88 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px); /* Adjust based on header height */
+  padding-top: 0; /* Remove top padding since we're centering */
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 0 0 1rem; /* Reduced from 2rem to 1rem to move content more left */
+}
+
+.contact-image {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.contact-item i {
+  font-size: 1.8rem;
+  width: 2rem;
+  text-align: center;
+  color: #666;
+}
+
+.contact-item a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-item a:hover,
+.contact-item span[style*="cursor: pointer"]:hover {
+  color: #282c34;
+}
+
+.resume-link {
+  color: #0066cc;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.resume-link:hover {
+  color: #004499;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .contact-container {
+    padding-top: 4rem; /* Adjusted for mobile */
+  }
+  
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem; /* Keep mobile padding as is */
+  }
+
+  .contact-image {
+    width: 200px;
+  }
+} 

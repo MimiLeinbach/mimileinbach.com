@@ -1,3 +1,6 @@
+import React from 'react';
+import './AIProjectModal.css';
+
 const AIProjectModal = ({ project, onClose }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -7,6 +10,21 @@ const AIProjectModal = ({ project, onClose }) => {
         </button>
         <div className="project-content">
           <h2>{project.title}</h2>
+          
+          {/* Jobs to be Done Video */}
+          {project.id === 2 && (
+            <div className="project-video-container">
+              <iframe
+                src="https://player.vimeo.com/video/1065343045"
+                width="100%"
+                height="400"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                title="Jobs to be Done Multi-Agent System Demo"
+              ></iframe>
+            </div>
+          )}
           
           {/* Portfolio Project Content */}
           {project.content.overview && (
@@ -48,8 +66,48 @@ const AIProjectModal = ({ project, onClose }) => {
             </>
           )}
 
+          {/* JTBD Project Content */}
+          {project.content.components && (
+            <>
+              <div className="project-section">
+                <p dangerouslySetInnerHTML={{ __html: project.content.description.text }}></p>
+              </div>
+              
+              <div className="project-section">
+                <h3>{project.content.components.title}</h3>
+                <ol>
+                  {project.content.components.list.map((item, index) => (
+                    <li key={index} dangerouslySetInnerHTML={{ __html: item }}></li>
+                  ))}
+                </ol>
+              </div>
+
+              <div className="project-section">
+                <h3>{project.content.workflow.title}</h3>
+                <ol>
+                  {project.content.workflow.list.map((item, index) => (
+                    <li key={index} dangerouslySetInnerHTML={{ __html: item }}></li>
+                  ))}
+                </ol>
+              </div>
+
+              <div className="project-section">
+                <h3>{project.content.technical.title}</h3>
+                <ul>
+                  {project.content.technical.list.map((item, index) => (
+                    <li key={index} dangerouslySetInnerHTML={{ __html: item }}></li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="project-section">
+                <p dangerouslySetInnerHTML={{ __html: project.content.conclusion.text }}></p>
+              </div>
+            </>
+          )}
+
           {/* Podcast Content */}
-          {project.content.description && (
+          {project.content.description && project.content.episodes && (
             <div className="project-section">
               <p dangerouslySetInnerHTML={{ __html: project.content.description.text }}></p>
             </div>

@@ -9,11 +9,11 @@ const AIProjects = () => {
     {
       id: 1,
       title: "AI-Assisted Portfolio Development",
-      image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/portfolio-homepage.jpg",  
+      image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/portfolio-homepage.jpg",
       content: {
         overview: {
           title: "Project Overview",
-          text: "I built this website with Cursor, utilizing collaborative coding with Claude 3 Sonnet, an Anthropic LLM. The project demonstrates how AI can be effectively used as a programming partner while maintaining full developer control over architecture and design decisions."
+          text: "I built this website with Cursor, utilizing collaborative coding with Claude 3.5 Sonnet, an Anthropic LLM. The project demonstrates how AI can be effectively used as a programming partner while maintaining full developer control over architecture and design decisions."
         },
         technical: {
           title: "Technical Implementation",
@@ -52,6 +52,47 @@ const AIProjects = () => {
     },
     {
       id: 2,
+      title: "Jobs to be Done Multi-Agent System",
+      image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/JTBD_multi_agent_system.jpg",
+      content: {
+        description: {
+          text: "This prototype multi-agent system is a specialized analytical tool that applies the Jobs to Be Done (JTBD) framework to user research data, helping product teams understand what users are truly trying to accomplish. It solves two main problems:<br><br>1. Customer feedback tends to be scattered across enterprise organizations, with structured and unstructured data collected and maintained by different functions. This tool would bring this data together to inform roadmap planning.<br><br>2. Jobs to be Done is a powerful framework for understanding customer needs to find product-market fit, but applying it requires specialized training and identifying the right level of specificity is challenging. This tool would help teams apply the methodology precisely and consistently."
+        },
+        components: {
+          title: "Key Components",
+          list: [
+            "<strong>Triage Agent</strong> - Evaluates incoming queries and determines if there's sufficient data to provide a complete analysis. It routes queries based on data completeness.",
+            "<strong>JTBD Agent</strong> - The core analytical engine that:<br>- Loads and processes research data related to specific topics<br>- Extracts \"jobs\" (tasks users want to accomplish) from raw data<br>- Classifies jobs into three types: functional, social, and emotional<br>- Clusters related jobs into meaningful themes using TF-IDF vectorization and K-means clustering<br>- Ranks themes by importance based on frequency<br>- Provides reliability assessments for the analysis",
+            "<strong>Multi-Agent System Coordinator</strong> - Orchestrates the agents and manages the overall workflow."
+          ]
+        },
+        workflow: {
+          title: "How It Works",
+          list: [
+            "A user submits a query about a specific topic (e.g., \"online grocery shopping\")",
+            "The Triage Agent assesses available data and determines if it's complete",
+            "The JTBD Agent analyzes the data to identify jobs and themes",
+            "Results are categorized into functional, social, and emotional dimensions",
+            "The system provides visualizations with appropriate color coding (green for functional, purple for social, blue for emotional)"
+          ]
+        },
+        technical: {
+          title: "Technical Features",
+          list: [
+            "<strong>Natural Language Processing</strong> for extracting and classifying jobs",
+            "<strong>Unsupervised machine learning</strong> (K-means and TF-IDF) for theme clustering",
+            "<strong>Silhouette scoring</strong> to determine optimal cluster counts",
+            "<strong>FastAPI backend</strong> for API services",
+            "<strong>React frontend</strong> for visualization and interaction"
+          ]
+        },
+        conclusion: {
+          text: "This system helps product teams move beyond feature requests to understand the underlying needs and motivations driving user behavior, enabling more strategic product decisions."
+        }
+      }
+    },
+    {
+      id: 3,
       title: "Life in 19th Century Hawaii Podcast",
       image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/HawaiiPodcast.jpg",
       content: {

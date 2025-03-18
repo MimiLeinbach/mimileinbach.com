@@ -43,12 +43,9 @@
   background-color: white;
 }
 
+/* Maintain aspect ratios for different image crops */
 .crop-top {
   object-position: center top !important;
-}
-
-.crop-top-faces {
-  object-position: center 20% !important;
 }
 
 .crop-bottom {
@@ -57,14 +54,18 @@
   border-top: 8px solid white !important;
 }
 
+.crop-ux-modern {
+  object-fit: cover !important;
+  object-position: center 65% !important;
+}
+
 .crop-design-thinking {
   object-fit: cover !important;
   object-position: center 90% !important;
 }
 
-.crop-ux-modern {
-  object-fit: cover !important;
-  object-position: center 65% !important;
+.crop-top-faces {
+  object-position: center 20% !important;
 }
 
 .case-study-content ul li:first-of-type {
@@ -76,4 +77,29 @@
 .case-study-content .tasks ul li:first-of-type {
   list-style-type: none;
   margin-left: -1.25em;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 1024px) {
+  .case-studies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .case-studies {
+    padding: 1rem;
+  }
+  
+  .case-studies-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .case-study-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
 } 
