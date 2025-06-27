@@ -1,50 +1,68 @@
-## **AI Itinerary \- Collaborative Trip Planning Platform**
+**Bolt Hackathon: Collaborative Trip Planning Platform**
 
-Hackathon Project | Team of 3 | React \+ TypeScript
+**Project Overview**
 
-### **Overview**
+This project is a collaboration among three people working remotely. I managed the Github repository and deployment and built the home page, trip creation, responsive web features. 
 
-AI Itinerary is a responsive web application designed to streamline collaborative group trip planning. Built during a hackathon with a distributed team of three developers, the platform enables friends to seamlessly coordinate travel plans through real-time collaboration and intuitive design.
+Junto is a modern web application that enables groups to collaboratively plan trips together. Built as a comprehensive solution for shared travel planning, it allows multiple users to create itineraries, add activities, and coordinate group adventures in real-time.  
+Live Demo: [https://steady-torte-9514f8.netlify.app](https://steady-torte-9514f8.netlify.app)
 
-### **Key Features**
+**Key Features**
 
-* Trip Creation & Management: Users can create trips with customizable dates, destinations, and participant counts  
-* Dynamic Itinerary Generation: Automatically generates day-by-day views based on trip duration  
-* Collaborative Activity Planning: Team members can add, edit, and join activities with location, timing, and cost tracking  
-* Real-time Collaboration: Shareable links enable instant team collaboration without authentication barriers  
-* Cost Management: Automatic calculation of per-participant expenses and trip totals  
-* Responsive Design: Mobile-first approach ensuring seamless experience across all devices
+* Trip Creation & Management: Users can create detailed trips with dates, participant counts, and custom names  
+* Real-time Collaboration: Multiple travelers can join trips via shareable links and contribute simultaneously  
+* Interactive Itinerary Builder: Day-by-day activity planning with drag-and-drop functionality  
+* Activity Management: Add, edit, and delete activities with details like location, time, cost, and notes  
+* Participant Tracking: See who's joining each activity with visual participant indicators
 
-### **Technical Implementation**
+**Technical Highlights**
 
-* Frontend: React 18 with TypeScript for type safety and developer experience  
-* State Management: Zustand for lightweight, scalable state management  
-* Routing: React Router for seamless navigation  
-* Styling: Tailwind CSS with custom design system featuring adventure-themed aesthetics  
-* Data Persistence: Local storage with shareable link functionality for MVP deployment  
-* Architecture: Modular component structure designed to minimize merge conflicts in team development
+* Frontend Stack: React 18 with TypeScript for component-based architecture  
+* Type Safety: Full TypeScript implementation for robust development  
+* Responsive Design: Mobile-first approach ensuring seamless experience across all devices  
+* Modern UI/UX: Clean, intuitive interface with smooth animations and micro-interactions  
+* State Management: Implemented with Zustand for efficient, scalable state handling  
+* Real-time Sharing: localStorage-based sharing system for instant collaboration  
+* Vite for fast development and optimized builds  
+* Tailwind CSS for utility-first styling and responsive design  
+* React Router for client-side navigation  
+* Date-fns for date manipulation and formatting
 
-### **Team Collaboration**
+**Key Technical Decisions**
 
-My Role: Lead developer for trip creation and management features
+1. *Zustand over Redux: Chosen for its simplicity and minimal boilerplate while maintaining powerful state management capabilities*  
+2. *localStorage Persistence: Implemented for offline-first functionality and seamless data sharing*  
+3. *Component Modularity: Organized into feature-based modules (trip creation, itinerary management, collaboration)*  
+4. *Mobile-First Design: Responsive breakpoints ensure optimal experience on all screen sizes*
 
-* Architected the core trip data structure and state management  
-* Implemented form validation and user experience flows  
-* Designed the foundational component library for team consistency
+**Development Process**
 
-Collaborative Strategy: Structured codebase with clear separation of concerns to enable parallel development without version control conflicts, allowing three developers to work simultaneously on different features.
+1. *Created comprehensive Product Requirements Document (PRD)*  
+2. *Foundation: Set up project structure, routing, and basic components*  
+3. *Trip Management: Implemented trip creation, editing, and persistence*  
+4. *Itinerary System: Built day-based activity planning with CRUD operations*  
+5. *Collaboration Features: Added user management, sharing, and real-time updates*  
+6. *Polish & Optimization: Enhanced UX with animations, error handling, and mobile optimization*
 
-### **Technical Highlights**
+**Challenges Solved**
 
-* Zero-authentication MVP using shareable links and local storage  
-* Real-time state synchronization across multiple browser sessions  
-* Responsive design system with consistent spacing and typography  
-* Performance-optimized with lazy loading and efficient re-renders
+* *State Synchronization: Developed robust system for sharing trip data between users*  
+* *Mobile Responsiveness: Ensured all interactions work seamlessly on touch devices*  
+* *Data Persistence: Implemented reliable localStorage system with migration support*  
+* *User Experience: Created intuitive flows for joining trips and managing activities*  
+* *Onboarding Flow: Streamlined trip creation with validation and preview*  
+* *Collaboration: Seamless invite system with shareable links*  
+* *Activity Management: Intuitive interface for planning daily activities*  
+* *Cost Tracking: Automatic calculation of trip expenses per participant*  
+* *Performance: Optimized bundle size and loading times*  
+* *Accessibility: Proper semantic HTML and keyboard navigation*  
+* *Error Handling: Graceful fallbacks and user-friendly error messages*  
+* *Code Quality: Clean, maintainable code with TypeScript safety*
 
-### **Impact**
+**Results & Impact**
 
-Delivered a fully functional MVP within hackathon timeframe, demonstrating ability to rapidly prototype, collaborate effectively in distributed teams, and create user-centered solutions under tight deadlines.
+* *Deployment: Successfully deployed to Netlify with automated CI/CD*  
+* *Performance: Achieved fast loading times with optimized Vite build*  
+* *User Experience: Created intuitive, collaborative planning experience*  
+* *Scalability: Built foundation for future features like real-time sync and backend integration*
 
----
-
-*This project showcases my ability to lead technical architecture decisions, collaborate effectively in fast-paced environments, and deliver polished user experiences with modern web technologies.*  
