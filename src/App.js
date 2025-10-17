@@ -75,21 +75,18 @@ function App() {
           <div className="home-content-wrapper">
             <div className="home-content">
               <div className="right-content">
-                <div className="video-container">
-                  <iframe 
-                    src="https://player.vimeo.com/video/1066360982"
-                    width="640" 
-                    height="360" 
-                    frameBorder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture" 
-                    allowFullScreen
-                    title="Mimi Portfolio Video"
-                  ></iframe>
+                <div className="image-container">
+                  <img
+                    src={process.env.PUBLIC_URL + '/Profile_large.jpg'}
+                    alt="Mimi Leinbach"
+                    className="homepage-image"
+                  />
                 </div>
               </div>
               <div className="left-content">
-                <h2>Entrepreneurial Product Leader</h2>
-                <p>I transform complex technical challenges into intuitive solutions that drive measurable business growth and delight millions of users. I bring a unique perspective that balances innovation with practical execution. I connect the dots between emerging technologies, business objectives, and human needs to create products that make a meaningful impact.</p>
+                <h2>AI Product Leader</h2>
+                <p>I'm an AI Product Leader who drives measurable outcomes at enterprise scale through systematic product strategy and operational excellence. At SAP SuccessFactors, I led AI-powered product experiences serving 26 million users across 10,000+ enterprise customers, achieving 12% satisfaction improvement and contributing to 31% NPS growth across the $2B platform.</p>
+                <p>My competitive advantage is bridging product innovation with operational execution. I built systematic frameworks for enterprise feature rollouts that reduced time-to-adoption by 50%, ensuring AI features moved efficiently from opt-in to universal deployment across thousands of customers. After leading products from zero-to-one startups to global enterprise platforms, I've learned that successful AI products require both technical innovation and disciplined operational frameworks—which is why my products consistently deliver measurable business impact.</p>
                 <p>I built this site with Cursor using Claude as a coding assistant. <span className="learn-more" onClick={toggleAIPortfolioModal}>Learn More</span></p>
               </div>
             </div>

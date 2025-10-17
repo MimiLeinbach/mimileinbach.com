@@ -1,20 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Contact.css';
-import ResumeModal from './ResumeModal';
 
 const Contact = () => {
-  const [showResume, setShowResume] = useState(false);
-  
-  const toggleResumeModal = () => {
-    setShowResume(!showResume);
-  };
-
   return (
     <div className="contact-container">
       <div className="contact-wrapper">
         <div className="contact-image">
           <img 
-            src={process.env.PUBLIC_URL + '/Profile_cursortab.jpeg'} 
+            src={process.env.PUBLIC_URL + '/Contact.jpg'} 
             alt="Mimi Leinbach"
           />
         </div>
@@ -41,16 +34,6 @@ const Contact = () => {
           </div>
           
           <div className="contact-item">
-            <i className="far fa-file-alt"></i>
-            <span 
-              onClick={toggleResumeModal}
-              style={{ cursor: 'pointer' }}
-            >
-              Resume
-            </span>
-          </div>
-          
-          <div className="contact-item">
             <i className="fab fa-github"></i>
             <a 
               href="https://github.com/MimiLeinbach" 
@@ -62,8 +45,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      
-      {showResume && <ResumeModal onClose={toggleResumeModal} />}
     </div>
   );
 };

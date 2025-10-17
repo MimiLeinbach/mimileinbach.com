@@ -16,7 +16,7 @@
 }
 
 .contact-image {
-  width: 300px;
+  width: 255px; /* Reduced from 300px by 15% */
   flex-shrink: 0;
 }
 
@@ -24,7 +24,7 @@
   width: 100%;
   height: auto;
   border-radius: 20px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .contact-content {
@@ -83,6 +83,6 @@
   }
 
   .contact-image {
-    width: 200px;
+    width: 170px; /* Reduced from 200px by 15% */
   }
 } 

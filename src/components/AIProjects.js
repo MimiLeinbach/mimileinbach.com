@@ -8,6 +8,149 @@ const AIProjects = () => {
   const projects = [
     {
       id: 1,
+      title: "Vibe Automation: AI News to LinkedIn Post",
+      image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/AINewsAutomation.jpg",
+      content: {
+        description: {
+          text: "The 'Vibe Automation' project focused on streamlining the process of curating and distributing AI-related news through an intelligent automation system. Leveraging tools like Zapier, Claude 3.5, and Google Sheets, the project transformed a manual, multi-step process into an efficient, task and token-optimized workflow capable of gathering, evaluating, summarizing, and distributing daily AI news to a LinkedIn audience."
+        },
+        objectives: {
+          title: "Key Objectives",
+          list: [
+            "Reliable News Sourcing: Automate the collection of news from curated AI-focused RSS feeds, ensuring the delivery of timely and relevant content.",
+            "Human-Centered Scoring: Articles were evaluated based on their industry significance, business relevance, and tech innovation, with a particular focus on human-centered AI topics such as UX, ethics, explainability, and compliance.",
+            "Task Efficiency: Minimize the monthly Zapier task usage while ensuring the workflow remained efficient and scalable, with a maximum limit of 750 tasks per month.",
+            "LinkedIn Distribution: Automatically summarize top articles in a natural, engaging voice suitable for LinkedIn posts, ready for manual review and publishing."
+          ]
+        },
+        implementation: {
+          title: "Implementation Details",
+          list: [
+            "RSS Feeds & Article Scraping: The automation pulled AI news from a set of selected, curated RSS feeds using Zapier's RSS by Zapier integration. Each morning, the system collected the latest articles, ready for processing.",
+            "Scoring & Relevance Filtering: Leveraging Claude 3.5, the system evaluated each article based on predefined relevance criteria, with human-centered factors like UX, ethics, and compliance given higher priority. The content was rated and filtered to ensure quality and relevance.",
+            "Summarization: Once filtered, the articles were processed into concise summaries. Claude 3.5 was utilized for natural language generation, ensuring a human-like, engaging tone suitable for LinkedIn.",
+            "Google Sheets Integration: Relevant articles, after being evaluated and summarized, were stored in Google Sheets for tracking and future reference. Articles that were duplicates or did not meet the human-centered AI relevance criteria were discarded.",
+            "Efficiency Refinement: Over time, we refined the workflow to ensure that tasks were optimized within the constraints of Zapier's task limits. We achieved a balance between functionality and cost efficiency."
+          ]
+        },
+        challenges: {
+          title: "Challenges",
+          list: [
+            "API Integration: A key challenge was managing the API interactions between Zapier and Claude, especially ensuring that article scoring, summarization, and the generation of the LinkedIn post functioned seamlessly across the system.",
+            "Content Relevance: Defining relevance criteria for human-centered AI content posed challenges, as the landscape of AI news evolves rapidly. Maintaining a consistent and meaningful relevance scoring system required ongoing fine-tuning.",
+            "Task Efficiency: Striking the right balance between task usage in Zapier and the system's complexity was difficult, especially considering the task limit. Optimizing the number of tasks while maintaining a high-quality output required deep knowledge of Zapier's capabilities and limits."
+          ]
+        },
+        learnings: {
+          title: "Key Learnings",
+          list: [
+            "Automation Scalability: One of the key learnings was the importance of designing workflows that can scale efficiently while respecting task limits. The project highlighted how well-designed automations can drastically reduce manual effort without compromising quality.",
+            "Formatting Compatibility: The text needed to be reformatted multiple times to be parsed by both Zapier and Claude. The dates also had to be standardized so we could work only with articles published in the last day.",
+            "Data-Driven Decision Making: The scoring system, refined through multiple iterations, demonstrated how leveraging data can improve the precision of content selection and enhance the relevance of distributed news.",
+            "Human-Centered AI Application: This project underscored the importance of integrating human-centered AI principles into automation systems, ensuring the content not only reflects technical excellence but also resonates with human interests, ethics, and values.",
+            "Cross-Disciplinary Collaboration: Effective collaboration across different teams was crucial to ensure that the project addressed both technical and content-related challenges. Engaging content experts, product managers, and AI specialists throughout the process ensured that the end result met both the business goals and the audience's needs."
+          ]
+        },
+        conclusion: {
+          text: "The 'Vibe Automation' AI News project exemplifies how AI-driven automation can be harnessed to streamline content curation, scoring, and distribution processes while maintaining human-centered principles. By utilizing a mix of Zapier, Claude, and Google Sheets, the system not only saved valuable time but also provided personalized, relevant content in an efficient manner. This project serves as a prime example of how AI can enhance business operations, promote thought leadership, and optimize workflows across the AI and product development landscapes."
+        }
+      }
+    },
+    {
+      id: 2,
+      title: "AI Itinerary: Collaborative Trip Planning Platform (Hackathon)",
+      image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/BoltHackathon.png",
+      content: {
+        description: {
+          text: "AI Itinerary is a responsive web application designed to streamline collaborative group trip planning. Built during a hackathon with a distributed team of three developers, the platform enables friends to seamlessly coordinate travel plans through real-time collaboration and intuitive design."
+        },
+        features: {
+          title: "Key Features",
+          list: [
+            "Trip Creation & Management: Users can create trips with customizable dates, destinations, and participant counts",
+            "Dynamic Itinerary Generation: Automatically generates day-by-day views based on trip duration",
+            "Collaborative Activity Planning: Team members can add, edit, and join activities with location, timing, and cost tracking",
+            "Real-time Collaboration: Shareable links enable instant team collaboration without authentication barriers",
+            "Cost Management: Automatic calculation of per-participant expenses and trip totals",
+            "Responsive Design: Mobile-first approach ensuring seamless experience across all devices"
+          ]
+        },
+        technical: {
+          title: "Technical Implementation",
+          list: [
+            "Frontend: React 18 with TypeScript for type safety and developer experience",
+            "State Management: Zustand for lightweight, scalable state management",
+            "Routing: React Router for seamless navigation",
+            "Styling: Tailwind CSS with custom design system featuring adventure-themed aesthetics",
+            "Data Persistence: Local storage with shareable link functionality for MVP deployment",
+            "Architecture: Modular component structure designed to minimize merge conflicts in team development"
+          ]
+        },
+        role: {
+          title: "My Role",
+          text: "Lead developer for trip creation and management features. Architected the core trip data structure and state management, implemented form validation and user experience flows, and designed the foundational component library for team consistency."
+        },
+        highlights: {
+          title: "Technical Highlights",
+          list: [
+            "Zero-authentication MVP using shareable links and local storage",
+            "Real-time state synchronization across multiple browser sessions",
+            "Responsive design system with consistent spacing and typography",
+            "Performance-optimized with lazy loading and efficient re-renders"
+          ]
+        },
+        impact: {
+          title: "Impact",
+          text: "Delivered a fully functional MVP within hackathon timeframe, demonstrating ability to rapidly prototype, collaborate effectively in distributed teams, and create user-centered solutions under tight deadlines."
+        },
+        conclusion: {
+          text: "This project showcases my ability to lead technical architecture decisions, collaborate effectively in fast-paced environments, and deliver polished user experiences with modern web technologies."
+        }
+      }
+    },
+    {
+      id: 3,
+      title: "Jobs to be Done Multi-Agent System",
+      image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/JTBD_multi_agent_system.jpg",
+      content: {
+        description: {
+          text: "This prototype multi-agent system is a specialized analytical tool that applies the Jobs to Be Done (JTBD) framework to user research data, helping product teams understand what users are truly trying to accomplish. It solves two main problems:<br><br>1. Customer feedback tends to be scattered across enterprise organizations, with structured and unstructured data collected and maintained by different functions. This tool would bring this data together to inform roadmap planning.<br><br>2. Jobs to be Done is a powerful framework for understanding customer needs to find product-market fit, but applying it requires specialized training and identifying the right level of specificity is challenging. This tool would help teams apply the methodology precisely and consistently."
+        },
+        components: {
+          title: "Key Components",
+          list: [
+            "<strong>Triage Agent</strong> - Evaluates incoming queries and determines if there's sufficient data to provide a complete analysis. It routes queries based on data completeness.",
+            "<strong>JTBD Agent</strong> - The core analytical engine that:<br>- Loads and processes research data related to specific topics<br>- Extracts \"jobs\" (tasks users want to accomplish) from raw data<br>- Classifies jobs into three types: functional, social, and emotional<br>- Clusters related jobs into meaningful themes using TF-IDF vectorization and K-means clustering<br>- Ranks themes by importance based on frequency<br>- Provides reliability assessments for the analysis",
+            "<strong>Multi-Agent System Coordinator</strong> - Orchestrates the agents and manages the overall workflow."
+          ]
+        },
+        workflow: {
+          title: "How It Works",
+          list: [
+            "A user submits a query about a specific topic (e.g., \"online grocery shopping\")",
+            "The Triage Agent assesses available data and determines if it's complete",
+            "The JTBD Agent analyzes the data to identify jobs and themes",
+            "Results are categorized into functional, social, and emotional dimensions",
+            "The system provides visualizations with appropriate color coding (green for functional, purple for social, blue for emotional)"
+          ]
+        },
+        technical: {
+          title: "Technical Features",
+          list: [
+            "<strong>Natural Language Processing</strong> for extracting and classifying jobs",
+            "<strong>Unsupervised machine learning</strong> (K-means and TF-IDF) for theme clustering",
+            "<strong>Silhouette scoring</strong> to determine optimal cluster counts",
+            "<strong>FastAPI backend</strong> for API services",
+            "<strong>React frontend</strong> for visualization and interaction"
+          ]
+        },
+        conclusion: {
+          text: "This system helps product teams move beyond feature requests to understand the underlying needs and motivations driving user behavior, enabling more strategic product decisions."
+        }
+      }
+    },
+    {
+      id: 4,
       title: "AI-Assisted Portfolio Development",
       image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/portfolio-homepage.jpg",
       content: {
@@ -51,48 +194,7 @@ const AIProjects = () => {
       }
     },
     {
-      id: 2,
-      title: "Jobs to be Done Multi-Agent System",
-      image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/JTBD_multi_agent_system.jpg",
-      content: {
-        description: {
-          text: "This prototype multi-agent system is a specialized analytical tool that applies the Jobs to Be Done (JTBD) framework to user research data, helping product teams understand what users are truly trying to accomplish. It solves two main problems:<br><br>1. Customer feedback tends to be scattered across enterprise organizations, with structured and unstructured data collected and maintained by different functions. This tool would bring this data together to inform roadmap planning.<br><br>2. Jobs to be Done is a powerful framework for understanding customer needs to find product-market fit, but applying it requires specialized training and identifying the right level of specificity is challenging. This tool would help teams apply the methodology precisely and consistently."
-        },
-        components: {
-          title: "Key Components",
-          list: [
-            "<strong>Triage Agent</strong> - Evaluates incoming queries and determines if there's sufficient data to provide a complete analysis. It routes queries based on data completeness.",
-            "<strong>JTBD Agent</strong> - The core analytical engine that:<br>- Loads and processes research data related to specific topics<br>- Extracts \"jobs\" (tasks users want to accomplish) from raw data<br>- Classifies jobs into three types: functional, social, and emotional<br>- Clusters related jobs into meaningful themes using TF-IDF vectorization and K-means clustering<br>- Ranks themes by importance based on frequency<br>- Provides reliability assessments for the analysis",
-            "<strong>Multi-Agent System Coordinator</strong> - Orchestrates the agents and manages the overall workflow."
-          ]
-        },
-        workflow: {
-          title: "How It Works",
-          list: [
-            "A user submits a query about a specific topic (e.g., \"online grocery shopping\")",
-            "The Triage Agent assesses available data and determines if it's complete",
-            "The JTBD Agent analyzes the data to identify jobs and themes",
-            "Results are categorized into functional, social, and emotional dimensions",
-            "The system provides visualizations with appropriate color coding (green for functional, purple for social, blue for emotional)"
-          ]
-        },
-        technical: {
-          title: "Technical Features",
-          list: [
-            "<strong>Natural Language Processing</strong> for extracting and classifying jobs",
-            "<strong>Unsupervised machine learning</strong> (K-means and TF-IDF) for theme clustering",
-            "<strong>Silhouette scoring</strong> to determine optimal cluster counts",
-            "<strong>FastAPI backend</strong> for API services",
-            "<strong>React frontend</strong> for visualization and interaction"
-          ]
-        },
-        conclusion: {
-          text: "This system helps product teams move beyond feature requests to understand the underlying needs and motivations driving user behavior, enabling more strategic product decisions."
-        }
-      }
-    },
-    {
-      id: 3,
+      id: 5,
       title: "Life in 19th Century Hawaii Podcast",
       image: process.env.PUBLIC_URL + "/AI Projects/Thumbnails/HawaiiPodcast.jpg",
       content: {
